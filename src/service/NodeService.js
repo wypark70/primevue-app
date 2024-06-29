@@ -426,7 +426,7 @@ export const NodeService = {
         },
 
         getTreeNodes() {
-            return Promise.resolve(this.getTreeNodesData());
+            return Promise.resolve([...this.getTreeNodesData(), ...this.getTreeNodesData(), ...this.getTreeNodesData()]);
         }
     };
     
