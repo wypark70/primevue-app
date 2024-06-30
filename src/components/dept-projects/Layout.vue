@@ -3,16 +3,16 @@
   <div class="card">
     <Splitter>
       <SplitterPanel :size="30" :minSize="20">
-        <DeptTree />
+        <Tree />
       </SplitterPanel>
       <SplitterPanel :size="70" :minSize="50">
-        <DeptProjects />
+        <Projects />
       </SplitterPanel>
     </Splitter>
   </div>
 </template>
 
 <script setup>
-import DeptProjects from "./DeptProjects.vue";
-import DeptTree from "./DeptTree.vue";
+import Projects from "@/components/dept-projects/Projects.vue";
+import Tree from "@/components/dept-projects/Tree.vue";
 </script>
